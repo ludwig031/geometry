@@ -4,12 +4,18 @@ namespace AppBundle\Service;
 
 class GeometryCalculator
 {
-    public function sumCircufences() {
-        return 0;
+    public function sumCircumfences($a, $b)
+    {
+        $a = json_decode($a, true);
+        $b = json_decode($b, true);
+            
+        return $a['circumfence']+$b['circumfence'];
     }
     
     public function sumSurfaces() {
-        return 0;
+        $a = json_decode($a, true);
+        $b = json_decode($b, true);
         
-    }
+        return $a['surface']+$b['surface'];
+        }
 }
