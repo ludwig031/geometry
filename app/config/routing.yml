@@ -4,10 +4,10 @@ app:
 
 get_triangle:
     path:   /triangle/{a}/{b}/{c}
-    defaults: { _controller: AppBundle:Triangle:show }
+    defaults: { _controller: AppBundle:Triangle:index }
     methods:  [GET]
 
 get_circle:
     path:     /circle/{radius}
-    defaults: { _controller: AppBundle:Circle:show }
+    defaults: { _controller: AppBundle:Circle:index }
     methods:  [GET]
