@@ -1,3 +1,13 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+get_triangle:
+    path:   /triangle/{a}/{b}/{c}
+    defaults: { _controller: AppBundle:Triangle:show }
+    methods:  [GET]
+
+get_circle:
+    path:     /circle/{radius}
+    defaults: { _controller: AppBundle:Circle:show }
+    methods:  [GET]
